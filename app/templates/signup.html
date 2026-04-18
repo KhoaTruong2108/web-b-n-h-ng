@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Ký - KhoaTruong</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#8433c4",
+            "secondary-container": "#fe6f33",
+            "outline": "#7e7384",
+            "secondary-fixed": "#ffdbce",
+            "on-tertiary-fixed": "#2b0052",
+            "primary-container": "#9d4edd",
+            "tertiary-fixed": "#efdbff",
+            "on-primary-container": "#fffdff",
+            "surface-bright": "#f8f9fa",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#f2daff",
+            "on-background": "#191c1d",
+            "on-secondary-fixed-variant": "#802a00",
+            "on-surface-variant": "#4d4353",
+            "background": "#f8f9fa",
+            "on-primary-fixed": "#2e004e",
+            "surface-variant": "#e1e3e4",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#dbb8ff",
+            "primary": "#8231c2",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f3f4f5",
+            "surface-container": "#edeeef",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed-variant": "#6122a1",
+            "on-tertiary-container": "#fffdff",
+            "on-error": "#ffffff",
+            "primary-fixed-dim": "#e0b6ff",
+            "surface-dim": "#d9dadb",
+            "on-secondary-container": "#5f1d00",
+            "on-surface": "#191c1d",
+            "on-secondary-fixed": "#380d00",
+            "inverse-surface": "#2e3132",
+            "secondary-fixed-dim": "#ffb59a",
+            "surface": "#f8f9fa",
+            "on-primary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f0f1f2",
+            "secondary": "#a83900",
+            "outline-variant": "#d0c2d5",
+            "surface-container-high": "#e7e8e9",
+            "on-primary-fixed-variant": "#6a0baa",
+            "inverse-primary": "#e0b6ff",
+            "tertiary": "#783db9",
+            "tertiary-container": "#9258d4",
+            "surface-container-highest": "#e1e3e4"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          fontFamily: {
+            headline: ["Plus Jakarta Sans"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-body bg-background min-h-screen relative flex flex-col">
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-transparent glassmorphic backdrop-blur-xl">
+    <div class="text-2xl font-bold tracking-tight text-purple-700 dark:text-purple-300 font-headline">
+      KhoaTruong
+    </div>
+
+    <div class="flex items-center gap-6">
+      <nav class="hidden md:flex gap-8">
+        <a class="text-slate-600 dark:text-slate-400 hover:opacity-80 transition-opacity font-medium" href="#">Sản phẩm</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:opacity-80 transition-opacity font-medium" href="#">Tính năng</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:opacity-80 transition-opacity font-medium" href="#">Bảng giá</a>
+      </nav>
+      <button class="material-symbols-outlined text-purple-600 dark:text-purple-400 hover:opacity-80 transition-opacity">
+        help_outline
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main
+    class="flex-grow flex items-center justify-center relative min-h-screen bg-sunset"
+    data-alt="vibrant atmospheric sunset horizon with soft purple and orange gradient sky over a tranquil misty landscape"
+  >
+    <div class="absolute inset-0 bg-black/10 backdrop-blur-sm"></div>
+
+    <div class="relative z-10 w-full max-w-[540px] px-6 py-12 md:py-20">
+      <div class="glass-container whisper-shadow rounded-[1.5rem] p-10 md:p-12">
+        <div class="mb-10 text-center">
+          <h1 class="font-headline text-3xl md:text-4xl font-extrabold text-on-surface tracking-tight mb-2">
+            Đăng Ký
+          </h1>
+          <p class="text-on-surface-variant text-sm">
+            Bắt đầu hành trình sáng tạo của bạn ngay hôm nay
+          </p>
+        </div>
+
+        <form class="space-y-6" id="registerForm">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+                Họ và tên
+              </label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">person</span>
+                <input
+                  class="w-full pl-11 pr-4 py-3 bg-surface-container-low/50 border-none rounded-xl focus:ring-2 focus:ring-primary/40 text-on-surface text-sm transition-all outline-none placeholder:text-outline/50"
+                  placeholder="Nguyễn Văn A"
+                  type="text"
+                  id="fullName"
+                />
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+                Số điện thoại
+              </label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">call</span>
+                <input
+                  class="w-full pl-11 pr-4 py-3 bg-surface-container-low/50 border-none rounded-xl focus:ring-2 focus:ring-primary/40 text-on-surface text-sm transition-all outline-none placeholder:text-outline/50"
+                  placeholder="090 123 4567"
+                  type="tel"
+                  id="phone"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+              Tên tài khoản
+            </label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">account_circle</span>
+              <input
+                class="w-full pl-11 pr-4 py-3 bg-surface-container-low/50 border-none rounded-xl focus:ring-2 focus:ring-primary/40 text-on-surface text-sm transition-all outline-none placeholder:text-outline/50"
+                placeholder="khoatruong_dev"
+                type="text"
+                id="username"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+              Địa chỉ Email
+            </label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">mail</span>
+              <input
+                class="w-full pl-11 pr-4 py-3 bg-surface-container-low/50 border-none rounded-xl focus:ring-2 focus:ring-primary/40 text-on-surface text-sm transition-all outline-none placeholder:text-outline/50"
+                placeholder="email@example.com"
+                type="email"
+                id="email"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+              Mật khẩu
+            </label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">lock</span>
+              <input
+                class="w-full pl-11 pr-12 py-3 bg-surface-container-low/50 border-none rounded-xl focus:ring-2 focus:ring-primary/40 text-on-surface text-sm transition-all outline-none placeholder:text-outline/50"
+                placeholder="••••••••"
+                type="password"
+                id="password"
+              />
+              <span
+                class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl cursor-pointer hover:text-primary transition-colors"
+                id="togglePassword"
+              >
+                visibility
+              </span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-2">
+            <input
+              class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary bg-surface-container-low/50"
+              id="terms"
+              type="checkbox"
+            />
+            <label class="text-sm text-on-surface-variant" for="terms">
+              Tôi đồng ý với
+              <span class="text-secondary font-semibold hover:underline cursor-pointer">Điều khoản dịch vụ</span>
+            </label>
+          </div>
+
+          <button
+            class="w-full py-4 primary-gradient text-white font-semibold rounded-lg shadow-lg shadow-primary/15 hover:opacity-90 active:scale-[0.98] transition-all text-base uppercase tracking-wide mt-4"
+            type="submit"
+          >
+            Đăng Ký
+          </button>
+        </form>
+
+        <div class="mt-8 text-center">
+          <p class="text-on-surface-variant text-sm">
+            Đã có tài khoản?
+            <a class="text-secondary font-bold hover:underline ml-1 transition-all" href="#">
+              Đăng Nhập
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-8 px-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-transparent">
+    <div class="text-lg font-bold text-purple-700 dark:text-purple-300 font-headline">KhoaTruong</div>
+
+    <div class="flex gap-6">
+      <a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+      <a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 transition-colors text-sm font-medium" href="#">Terms of Service</a>
+      <a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 transition-colors text-sm font-medium" href="#">Contact</a>
+    </div>
+
+    <div class="text-slate-500 dark:text-slate-400 text-sm font-body">
+      © 2024 KhoaTruong. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+</body>
+</html>

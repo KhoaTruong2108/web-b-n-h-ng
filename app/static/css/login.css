@@ -1,0 +1,29 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-headline {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.whisper-shadow {
+  box-shadow: 0 10px 40px rgba(25, 28, 29, 0.06);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #8231c2 0%, #9d4edd 100%);
+}
+
+.button-shadow {
+  box-shadow: 0 4px 12px rgba(130, 49, 194, 0.15);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}

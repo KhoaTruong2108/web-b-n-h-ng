@@ -1,0 +1,22 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.glass-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+}
+
+.bg-sunset {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcgCs6IX6sokrqT4gLzR8JKS8p_vvVQrRmV89z_0AQD6EXjOjVzHu6DWKGh2JGTiSijixUhpyY_dOu5vMDBF81Omv1g6IK-ekut7YeY_E5WuRueMsXQUXcN5MnQC-nF2H1eheyobkRZeZDZI0Bkxr5dPxJjmzGzmmDxl79_HwCwS7tmx9lprQTdvlttIC0YS0W_1Y2ef5W7EokIQFrkbAC7gZPqBwqQFa9xZDKgENagyork9P7d_kwiFE0EVg9bUkuAiLGESr21NQ");
+  background-size: cover;
+  background-position: center;
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #8231c2 0%, #9d4edd 100%);
+}
+
+.whisper-shadow {
+  box-shadow: 0 10px 40px rgba(25, 28, 29, 0.06);
+}

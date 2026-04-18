@@ -1,0 +1,169 @@
+{% extends 'index.html' %}
+
+{% block main %}
+<section class="relative flex min-h-screen items-center justify-center overflow-hidden pt-24">
+      <div class="absolute inset-0">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaJio1AqCH5WKNqMLJ7iqmIlHRp50PYtrpvrnfRI7jDAxy2luyx3BVo7WbSWZ-Ni4SOGWbEX_jeBMrO7rXDjgNek_DbKAzs30axUN5ujPvrJbWX4gubvA0oeR4IfCGs_tP5UodkRWbTgSoXISv4Ab0Ma8WW_J1j_bqshv35q87OIpcO6CA1T0boYb4YeZGCIVofbu3Yn4IHCi7m9-6iFa6w2ZwgvFRUeFGIU4WYUF0LB1PoZ4NzJj7Sz7qMSb1vxhjvryZ15h6G5A"
+          alt="Gradient background"
+          class="h-full w-full object-cover opacity-30 blur-[80px]"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-background"></div>
+      </div>
+
+      <div class="section-container relative z-10 text-center">
+        <span class="mb-6 inline-block rounded-full bg-purple-100 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+          The Atmospheric Curator
+        </span>
+
+        <h1 class="mb-8 font-headline text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
+          Elevating Digital
+          <br />
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Experiences.
+          </span>
+        </h1>
+
+        <p class="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-text-muted md:text-xl">
+          Crafting sophisticated interfaces that blend editorial precision with functional excellence.
+          Experience the new standard of design.
+        </p>
+
+        <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="#"
+            class="w-full rounded-lg bg-gradient-to-r from-primary to-primary-light px-8 py-4 text-lg font-bold text-white shadow-xl transition hover:scale-105 sm:w-auto"
+          >
+            Đăng ký
+          </a>
+          <a
+            href="#"
+            class="glass w-full rounded-lg border border-border px-8 py-4 text-lg font-bold text-text transition hover:bg-white sm:w-auto"
+          >
+            Đăng nhập
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute -left-20 top-1/4 h-80 w-80 rounded-full bg-primary/10 blur-[120px]"></div>
+      <div class="absolute -right-20 bottom-1/4 h-80 w-80 rounded-full bg-secondary/10 blur-[120px]"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section-container py-24">
+      <div class="mb-16">
+        <h2 class="mb-4 font-headline text-4xl font-bold tracking-tight">Curated Services</h2>
+        <p class="max-w-xl text-lg text-text-muted">
+          Precision-engineered solutions for the next generation of digital platforms.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-12">
+        <!-- Card 1 -->
+        <article class="glass relative overflow-hidden rounded-3xl border border-border/50 p-10 shadow-card md:col-span-8">
+          <div class="relative z-10 flex h-full flex-col justify-between">
+            <div>
+              <span class="material-symbols-outlined mb-6 text-4xl text-primary">architecture</span>
+              <h3 class="mb-4 font-headline text-3xl font-bold">Strategic Architecture</h3>
+              <p class="max-w-md text-lg text-text-muted">
+                We define the structural backbone of your digital ecosystem, ensuring scalability and peak performance.
+              </p>
+            </div>
+
+            <a href="#" class="mt-12 inline-flex items-center font-bold text-secondary transition hover:gap-3">
+              Explore Methodology
+              <span class="material-symbols-outlined ml-2">arrow_forward</span>
+            </a>
+          </div>
+
+          <div class="absolute right-0 top-0 h-full w-1/2 opacity-20 transition duration-700 hover:scale-110">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrJQQ95HiozvhK0CKtRnuywUTva2sMjreDEa5mP6uATKqlf3Pddq8UGvE0REiwULZ8aVSPNcv0j27Cp4pbGiy13haeTjaWVCLAnNgJXynayeIbzWvckNoiYo-Kpu2Vp6I12Kos6q7feniqoYJH9eOnRekL5QphDCnGem-uQSWk9XXXIQEqgxdO0iaZ92IubmPNwn0limYaI1oyUdOreUtozBP2JtX1-9p42p1rC7EKgH5Zfe0x3NcIMjbXzCOb5MFcjTrPzq3GRg"
+              alt="Architecture visual"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="glass rounded-3xl border border-border/50 p-10 shadow-card md:col-span-4">
+          <span class="material-symbols-outlined mb-6 text-4xl text-secondary">edit_note</span>
+          <h3 class="mb-4 font-headline text-2xl font-bold">Editorial UI</h3>
+          <p class="text-text-muted">
+            Focusing on typography and negative space to create high-end content experiences.
+          </p>
+
+          <div class="mt-8 rounded-xl bg-slate-50 p-4">
+            <div class="mb-4 flex items-center gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <span class="material-symbols-outlined text-primary">draw</span>
+              </div>
+              <div class="h-2 w-24 rounded-full bg-slate-200"></div>
+            </div>
+            <div class="space-y-2">
+              <div class="h-2 w-full rounded-full bg-slate-200"></div>
+              <div class="h-2 w-4/5 rounded-full bg-slate-200"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="glass rounded-3xl border border-border/50 p-10 shadow-card md:col-span-4">
+          <span class="material-symbols-outlined mb-6 text-4xl text-primary">auto_awesome</span>
+          <h3 class="mb-4 font-headline text-2xl font-bold">Immersive Motion</h3>
+          <p class="mb-6 text-text-muted">
+            Subtle animations that guide users without overwhelming the senses.
+          </p>
+
+          <div class="aspect-square overflow-hidden rounded-2xl bg-slate-100">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC37exgGLRwJKUzhB5z8yJmmzy_eIbY9wHRvkennXghRCQisnkvQpmhCkN2t7on9Ve5rhmv_sGwBaBTGSiqRNVlYkzwpu5ppaZMef7KUu6EvH4iFHAYlLE6l2u_UqMteb1lxMziEEQZ_nA3peAVI-8AcdicFQIC5WMFw8v1b8hAL9-SrZmfVScdgJX1YWSRAHCfCDMDennWVLdKckpFFlekjuq8GSHW7BxHx_rhxHLnb8xpTh7907S-fpApCcyZBRC6YtF2xMds-Ts"
+              alt="Immersive motion visual"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="glass rounded-3xl border border-border/50 bg-gradient-to-br from-white to-slate-50 p-10 shadow-card md:col-span-8">
+          <div class="flex flex-col items-center gap-10 md:flex-row">
+            <div class="flex-1">
+              <span class="material-symbols-outlined mb-6 text-4xl text-secondary">database</span>
+              <h3 class="mb-4 font-headline text-3xl font-bold">Data Narrative</h3>
+              <p class="text-lg text-text-muted">
+                Turning complex data points into intuitive, beautiful visualizations that tell a story.
+              </p>
+            </div>
+
+            <div class="grid flex-1 grid-cols-2 gap-4">
+              <div class="h-32 rounded-2xl bg-purple-100"></div>
+              <div class="h-32 translate-y-6 rounded-2xl bg-orange-100"></div>
+              <div class="h-32 -translate-y-6 rounded-2xl bg-violet-100"></div>
+              <div class="h-32 rounded-2xl bg-slate-200"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-8 py-24">
+      <div class="section-container">
+        <div class="glass rounded-[2rem] border border-border/50 p-12 text-center shadow-card md:p-16">
+          <h2 class="mb-6 font-headline text-4xl font-bold tracking-tight md:text-5xl">
+            Ready to curate your vision?
+          </h2>
+          <p class="mx-auto mb-10 max-w-2xl text-xl text-text-muted">
+            Join a community of forward-thinking brands redefining the digital landscape.
+          </p>
+          <a
+            href="#"
+            class="inline-block rounded-full bg-primary px-10 py-4 text-lg font-bold text-white transition hover:shadow-xl"
+          >
+            Get Started Today
+          </a>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
